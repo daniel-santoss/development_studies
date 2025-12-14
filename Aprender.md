@@ -1,0 +1,23 @@
+- Aprender
+- Builds
+- Homologação e testes
+- N8N
+- IAAS
+- PAAS
+- SAAS
+- segmentação em camadas
+- Testes A/B
+- Google colab
+- Dashboards interativos
+- Linux
+- Espress.js (x)
+- Levantamento de requisitos
+- Diagrama de casos de uso
+- Diagramas de classe
+- Regras de negócio
+- Modelagem de domínio
+- Arquitetura baseada em serviço - SOA
+- Hash: sha256
+- Arquitetura orientada a serviço - Barramento
+- CMM
+- Métricas OKR
