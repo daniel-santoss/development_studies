@@ -5,7 +5,7 @@
 - IAAS
 - PAAS
 - SAAS
-- segmentação em camadas
+- Segmentação em camadas
 - Testes A/B
 - Google colab
 - Dashboards interativos
