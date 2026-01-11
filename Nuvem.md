@@ -52,3 +52,7 @@ pagam somente pelos recursos e duração de uso.
 - A nuvem oferece ferramentas de segurança que atendem às necessidades dos cliente, porém a implementação de muitas delas devem ser realizadas pelo próprio cliente;
 - A infraestrutura como serviço fornecerá os recursos físicos caso você queira o controle máxima da segurança. Isso permite que você gerencia os SOs, softwares instalados, incluindo patches e manutenção;
 - Plataforma como serviço ou SaaS podem ser as melhores opções, caso você queira que a aplicação de patches e a manutenção sejam tratadas automaticamente.
+
+# <h3>Gerenciabilidade</h3>
+- Gerenciar seu ambiente de nuvem e seus recursos por meio de um portal da web, ou linha de comando, APIs, PowerShell etc;
+- Implantar recursos com base em modelo pré-configurado, removendo a necessidade de configuração manual;
