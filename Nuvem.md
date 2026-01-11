@@ -56,3 +56,8 @@ pagam somente pelos recursos e duração de uso.
 # <h3>Gerenciabilidade</h3>
 - Gerenciar seu ambiente de nuvem e seus recursos por meio de um portal da web, ou linha de comando, APIs, PowerShell etc;
 - Implantar recursos com base em modelo pré-configurado, removendo a necessidade de configuração manual;
+
+# <h1> Serviços em Nuvem: </h1>
+- IaaS: Aluguel de hardware virtualizado como servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem. A configuração é de responsabilidade do cliente;
+- PaaS: Fornece um ambiente para a criação, hospedagem, teste e a implantação de aplicativos de software, sem focar no gerenciamento da infraestrutura;
+- SaaS: Você acessa o software pronto diretamente pela internet com o provedor controla absolutamente tudo (infraestrutura, plataforma e o próprio software).
