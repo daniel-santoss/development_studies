@@ -61,3 +61,30 @@ pagam somente pelos recursos e duração de uso.
 - IaaS: Aluguel de hardware virtualizado como servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem. A configuração é de responsabilidade do cliente;
 - PaaS: Fornece um ambiente para a criação, hospedagem, teste e a implantação de aplicativos de software, sem focar no gerenciamento da infraestrutura;
 - SaaS: Você acessa o software pronto diretamente pela internet com o provedor controla absolutamente tudo (infraestrutura, plataforma e o próprio software).
+
+# <h3>Banco de Dados</h3>
+- Pré-requisitos:
+- Assinatura do Azure: É necessário ter uma conta ativa.
+- Permissões: Seu usuário precisa da função de Colaborador da Instância Gerenciada de SQL.
+
+# <h3>Passo a Passo no Portal do Azure</h3>
+- Acesse o Hub SQL: Entre no portal e pesquise por "Azure SQL" ou acesse o hub específico em aka.ms/azuresqlhub.
+- Iniciar Criação: Clique em + Criar e escolha a opção Instância Gerenciada de SQL
+- Aba "Básico":
+- Selecione sua Assinatura e o Grupo de Recursos.
+- Dê um Nome à instância e escolha a Região (ex: Brazil South).
+- Defina as Credenciais do Administrador (login e senha).
+- Configurar Computação + Armazenamento:
+- Escolha a camada de serviço (ex: Uso Geral ou Crítico de Negócios).
+- Defina a quantidade de vCores e o tamanho do Armazenamento (GB).
+- Aba "Rede":
+- Selecione ou crie uma Rede Virtual (VNet) e uma sub-rede dedicada para a instância.
+- Escolha o tipo de conexão (Padrão ou Proxy) e se deseja habilitar um Ponto de Extremidade Público (para acesso via internet).
+- Revisar e Criar:
+- Avance pelas abas de Segurança e Marcas (opcional).
+- Clique em Revisar + criar e, após a validação, clique em Criar.
+
+# <h3>Monitoramento e Conexão</h3>
+- Aguarde a Implantação: O processo pode levar algum tempo. Você pode acompanhar o progresso pelo ícone de notificações no topo do portal.
+- Obter Detalhes: Após a conclusão, vá até o recurso criado. Na aba Visão Geral, localize o campo Host (nome do servidor) para se conectar via SQL Server Management Studio (SSMS) ou outras ferramentas.
+- Dica: Existe uma opção de "Avaliação Gratuita" para novos usuários que oferece até 720 horas de uso por mês no primeiro ano para determinadas configurações.
