@@ -101,7 +101,6 @@ pagam somente pelos recursos e duração de uso.
 - Obter Detalhes: Após a conclusão, vá até o recurso criado. Na aba Visão Geral, localize o campo Host (nome do servidor) para se conectar via SQL Server Management Studio (SSMS) ou outras ferramentas.
 - Dica: Existe uma opção de "Avaliação Gratuita" para novos usuários que oferece até 720 horas de uso por mês no primeiro ano para determinadas configurações.
 
-<h3>Monitoramento e Conexão</h3>
 
 
 
