@@ -1,3 +1,5 @@
+<h1> Introdução ao AZ-900: </h1>
+
 # Nuvem
 Nuvem Privada:
 - Ambiente em nuvem somente para a org;
@@ -58,9 +60,19 @@ pagam somente pelos recursos e duração de uso.
 - Implantar recursos com base em modelo pré-configurado, removendo a necessidade de configuração manual;
 
 # <h1> Serviços em Nuvem: </h1>
-- IaaS: Aluguel de hardware virtualizado como servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem. A configuração é de responsabilidade do cliente;
-- PaaS: Fornece um ambiente para a criação, hospedagem, teste e a implantação de aplicativos de software, sem focar no gerenciamento da infraestrutura;
+- IaaS: Aluguel de hardware virtualizado como servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem. A configuração é de responsabilidade do cliente, o provedor de nuvem só é responsável pelas questões básicas de segurança física, energia e conectividade.
+- PaaS: Fornece um ambiente para a criação, hospedagem, teste e a implantação de aplicativos de software, sem focar no gerenciamento da infraestrutura; O PaaS é um meio termo entre IaaS e SaaS, distribuindo a responsabilidade uniformemente entre o provedor de nuvem e o consumido.
 - SaaS: Você acessa o software pronto diretamente pela internet com o provedor controla absolutamente tudo (infraestrutura, plataforma e o próprio software).
+
+# <h4>Ao usar um provedor de nuvem, você é sempre responsável por:</h5>
+- As informações e os dados armazenados na nuvem
+- Dispositivos que têm permissão para se conectar à nuvem (celulares, computadores e assim por diante)
+- As contas e identidades das pessoas, serviços e dispositivos em seu ambiente
+
+# <h4>O provedor de nuvem é sempre responsável por:</h5>
+- O datacenter físico
+- A rede física
+- Hosts físicos -> Máquinas reais (hardware), que hospedam sistemas como VMs, aplicação, banco de dados..
 
 # <h3>Banco de Dados</h3>
 - Pré-requisitos:
@@ -88,3 +100,8 @@ pagam somente pelos recursos e duração de uso.
 - Aguarde a Implantação: O processo pode levar algum tempo. Você pode acompanhar o progresso pelo ícone de notificações no topo do portal.
 - Obter Detalhes: Após a conclusão, vá até o recurso criado. Na aba Visão Geral, localize o campo Host (nome do servidor) para se conectar via SQL Server Management Studio (SSMS) ou outras ferramentas.
 - Dica: Existe uma opção de "Avaliação Gratuita" para novos usuários que oferece até 720 horas de uso por mês no primeiro ano para determinadas configurações.
+
+<h3>Monitoramento e Conexão</h3>
+
+
+
