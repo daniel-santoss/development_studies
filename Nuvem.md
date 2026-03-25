@@ -5,16 +5,30 @@
 ### **Modelos de Implantação**
 | Modelo | Descrição |
 | :--- | :--- |
-| **Nuvem Privada** | • Ambiente em nuvem somente para a org;<br>• Gestão interna ou terceirizada;<br>• Não fornecem acesso aos usuários fora da org. |
+| **Nuvem Privada** | • Ambiente em nuvem somente para uma única entidade;<br>• Gestão interna ou terceirizada;<br>• Não fornecem acesso aos usuários fora da organização. |
 | **Nuvem Pública** | • Oferecida por um provedor externo e compartilhada entre vários clientes;<br>• Acesso via internet (geralmente). |
-| **Nuvem Híbrida** | • Dados sensíveis ficam na privada;<br>• Processamento e serviços na pública;<br>• Integração entre ambientes. |
+| **Nuvem Híbrida** | • Usuários podem escolher com flexibilidade quais serviços manter na nuvem pública e quais implantar na infraestrutura de nuvem privada;<br>• Dados sensíveis ficam na privada;<br>• Processamento e serviços na pública;<br>• Integração entre ambientes. |
+| **Multicloud** | • Lida com dois (ou mais) provedores de nuvem PÚBLICA e gerencia recursos e segurança em ambos os ambientes;<br>• Pode ter iniciado seu percurso de nuvem com um provedor e esteja em processo de migração para um provedor diferente |
+| **Azure Arc** | • Conecta servidores, bancos de dados e clusters fora do Azure ao Azure.;<br>• Pode Gerenciar servidores locais pelo Azure, aplicar políticas (governança), monitorar tudo em um só lugar, controlar segurança centralizada, usar serviços do Azure fora da nuvem Azure |
+
+## Solução VMware no Azure
+
+* **O que é o VMware?:** Tecnologia que permite rodar várias máquinas virtuais em um único servidor físico.
+* **O que é esse solução?:** Serviço que permite rodar ambientes VMware dentro do Azure sem precisar mudar quase nada.
+* **Benefícios:** Continuar usando as mesmas ferramentas VMware; Evitar reescrever/adaptar aplicações; Rápida migração.
 
 ### **Modelos Financeiros**
 | Conceito | Definição |
 | :--- | :--- |
-| **CapEx** | • Valor que vai se reduzindo com o tempo, por exemplo um investimento em novos equipamentos e ambientes, que depois só será feito a manutenção.<br>• Pagamento imediato. |
-| **OpEx** | • Serviços de nuvem, assinatura, aluguel;<br>• Pagamento conforme uso. |
-| **Consumo** | • Os provedores de serviços em nuvem utilizam esse modelo, onde as orgs pagam somente pelos recursos e duração de uso. |
+| **CapEx** | • Gastos antecipados em infraestrutura física;<br>• Valor que vai se reduzindo com o tempo, por exemplo um investimento em novos equipamentos e ambientes, que depois só será feito a manutenção.<br>• Pagamento imediato. |
+| **OpEx** | • Gastos contínuos com serviços ao longo do tempo;<br>• Serviços de nuvem, assinatura, aluguel;<br>• Pagamento conforme uso. |
+| **Modelo Baseado em Consumo** | • As organizações pagam somente pelos recursos e duração de uso.<br>• Não há custos iniciais para infraestrutura de hardware ou datacenter (provedor cuida disso).<br>•Não é necessário comprar e gerenciar a capacidade que pode ser subutilizada.<br>• A capacidade de adicionar recursos quando a demanda aumenta.<br>• A capacidade de liberar recursos quando a demanda diminui. |
+
+## Controle de tráfego para alteração de capacidade
+
+* **Quem controla isso?:** Pode ser automático OU manual, depende de como você configura.
+* **Manual:** Alguém da equipe precisa ir no Azure e aumentar a capacidade de processamento, porém depende de monitoramento humano e não é rápido para picos inesperados.
+* **Escala automática (Auto Scale):** NÃO é feito do nada, alguém precisa criar as regras antes para o devido funcionamento. Exemplo: Se CPU > 70% -> adicionar 1 máquina || Se CPU < 30% -> remover 1 máquina.
 
 ---
 
@@ -81,3 +95,6 @@
 6. **Revisar:** Clique em `Revisar + criar` e depois em `Criar`.
 
 > 💡 **Monitoramento:** O processo pode levar tempo; acompanhe pelas notificações. Na aba **Visão Geral**, localize o campo **Host** para se conectar via SSMS.
+
+
+
