@@ -1,139 +1,123 @@
-<h2>MACHINE LEARNING:</h2> 
-É um subgrupo dentro da Inteligência Artificial que foca no processamento e análise de dados por meio de algoritmos, com o objetivo de gerar informações úteis para fundamentar a tomada de decisão.<br>
-PRÁTICA: Você tem um problema e uma decisão para ser tomada -> Você precisa de informações para tomar a melhor decisão -> Coleta e processa os dados por meio dos algoritmos em python -> Resumo das informações que sejam úteis para as tomadas de decisão.<br><br>
+# 🧠 Fundamentos de Machine Learning
 
-DEEP LEARNIG: É uma subárea do Machine Learning focado no aprendizado profundo com base em redes neurais. É uma técnica específica e mais potente, inspirada na estrutura e no funcionamento dos neurônios do cérebro humano para processar dados e criar padrões para a tomada de decisão.<br>
-Sua principal vantagem é a capacidade de aprender características automaticamente a partir de dados brutos, sem a necessidade de intervenção humana manual para extrair os atributos.
-É necessário milhões de exemplos para aprender os padrões sozinho sem "alucinar" ou decorar (overfitting).<br>
+## 1. Conceitos Principais
 
-Em geral, o machine learning tem o objetivo de encontrar padrões nos dados, seja gerando modelos preditivos (modelos onde você consegue a partir daquela relação estabelecida fazer previsões com base nos seus resultados) ou análise exploratória para identificar padrões, relações latentes, ocultas nesses dados.
+### **Machine Learning (Aprendizado de Máquina)**
+É um subgrupo dentro da Inteligência Artificial que foca no processamento e análise de dados por meio de algoritmos, com o objetivo de gerar informações úteis para fundamentar a tomada de decisão.
 
-Data-driven decision making: Tomar decisões baseadas em análise de dados: Redução de incertezas, aumento de eficácia.
+> **PRÁTICA:** Problema e decisão → Necessidade de informação → Coleta e processa dados (Python) → Resumo útil para decisão.
 
 
-<h3>FLUXO DO MACHINE LEARNING:</h3>
 
-1. Definição do problema:
- - Qual é o problema a ser resolvido?
- - Quais são os atributos envolvidos? Relacionar os dados.
+[Image of Machine Learning vs Deep Learning vs Artificial Intelligence]
 
-2. Coleta dos dados:
- - Fontes: Dados históricos; dados atualizados em tempo real.
- - Provenientes de várias fontes ou já estão consolidados em local únicos.
- - É fundamental avaliar a qualidade dos dados.
 
-3. Tratamento e preparação dos dados:
- - Junção de bases, limpeza, criação de variáveis, seleção de observações etc.
- 
-4. Aplicação de análises:
- - Escolha das técnicas e modelos mais adequados as características dos dados.
- - Análises exploratórias dos dados e modelos multivariados de machine learning.
+### **Deep Learning (Aprendizado Profundo)**
+É uma subárea do Machine Learning focado no aprendizado profundo com base em redes neurais. É uma técnica específica e mais potente, inspirada na estrutura e no funcionamento dos neurônios do cérebro humano para processar dados e criar padrões para a tomada de decisão.
 
-5. Interpretação e tomada de decisão:
- - Como o resultado podem ser interpretados e colocados em prática.
+* **Vantagem:** Capacidade de aprender características automaticamente a partir de dados brutos (sem intervenção humana manual).
+* **Requisito:** Necessita de milhões de exemplos para evitar "alucinações" ou o **Overfitting** (decorar em vez de aprender).
 
- <h2>PONDERAÇÃO ARBITRÁRIA</h2>
+---
 
- - Ocorre quando atribuímos "pesos" (importância) a determinadas variáveis ou entradas de forma manual, baseada apenas no nosso julgamento pessoal, intuição ou convenção, em vez de deixar que o modelo descubra esses valores através dos dados.
- - No Machine Learning, buscamos substituir a ponderação arbitrária pela ponderação otimizada, onde o algoritmo ajusta esses pesos matematicamente para encontrar a "lógica" mais precisa.
+## 2. Objetivos e Tomada de Decisão
 
-<h2>MODELOS SUPERVISIONADOS</h2>
+* **Encontrar Padrões:** Seja gerando modelos preditivos (previsões com base em relações estabelecidas) ou análise exploratória (identificar relações ocultas).
 
-O modelo é treinado usando um conjunto de dados que já contém a resposta correta. Nesse caso, fornecemos ao algoritmo pares de entrada(features) que são as características ou atributos do que você está analisando e as saída(target) que é o rótulo, a categoria ou o valor final que você quer que o modelo aprenda a prever.
-- Mesmo quando o modelo acerta, ele precisa da confirmação da saída para saber que o caminho que ele seguiu internamente está correto e deve ser reforçado.
-- Com base nos resultados, ele ajusta os parâmetros para tentar obter um resultado mais preciso.
-- Se o modelo ajustar demais para corrigir até os mínimos detalhes  (0,0001), ele pode acabar decorando os dados de treino em vez de aprender a lógica gerada, resultando em grandes falhas nos resultados quando são apresentados novos dados.
+* **Data-driven decision making:** Tomar decisões baseadas em análise de dados resulta na redução de incertezas e aumento de eficácia.
 
-<h4>FASES DO MOLELO SUPERVISIONADO:</h4>
+* **Ponderação Arbitrária vs. Otimizada:** * **Arbitrária:** Atribuição manual de "pesos" baseada em intuição ou convenção.
+    * **Otimizada:** O algoritmo ajusta os pesos matematicamente para encontrar a lógica mais precisa através dos dados.
 
-1: Fase de treinamento:
-- O modelo tem acesso aos pares (Entrada + Saída). Ele usa a saída para ajustar seus parâmetros internos. É aqui que ele "estuda" com o gabarito do lado.
+---
 
-2: Fase de Predição / Teste:
+## ⚙️ Fluxo do Machine Learning
 
- - Nessa fase, ele não tem mais acesso à saída.
- - O modelo precisa "se virar" com o que aprendeu.
- - Ele gera uma resposta e é avaliado se ele está performando bem em dados que ele nunca viu antes.
 
- <h2>MODELOS NÃO SUPERVISIONADOS:</h3>
 
-- O algoritmo recebe dados sem rótulos e sem respostas pré-definidas. O modelo deve explorar os dados e encontrar uma estrutura interna ou padrões ocultos por conta própria.
-- O objetivo é modelar a estrutura ou distribuição subjacente dos dados para aprender mais sobre eles.
-- O algoritmo agrupa os dados por semelhança ou reduz a complexidade deles sem saber previamente o que cada grupo representa
+[Image of Machine Learning Workflow]
 
-<h4>FASES DO MODELO NÃO SUPERVISIONADO</h4>
 
-1: Fase de Treinamento (Descoberta):
-- O modelo tem acesso apenas aos dados de Entrada.
-- Ele não tem "gabarito". O objetivo é analisar as semelhanças matemáticas para criar grupos ou regras por conta própria.
+1. **Definição do problema:**
+    * Qual é o problema a ser resolvido?
+    * Quais são os atributos envolvidos? (Relacionar os dados).
 
-2: Fase de Predição / Aplicação:
+2. **Coleta dos dados:**
+    * Fontes: Dados históricos ou em tempo real.
+    * Avaliação fundamental da qualidade dos dados.
 
-- O modelo recebe um dado novo e, com base na estrutura que ele descobriu, ele decide em qual grupo esse dado se encaixa melhor.
-- A avaliação é feita pela coesão (se o dado realmente se parece com os outros do grupo).
+3. **Tratamento e preparação dos dados:**
+    * Junção de bases, limpeza, criação de variáveis e seleção de observações.
 
-<h4>Diferenças de aprendizado:</h4>
+4. **Aplicação de análises:**
+    * Escolha de técnicas e modelos adequados.
+    * Análises exploratórias e modelos multivariados.
 
-- Diferente do supervisionado, não há uma "resposta certa" (rótulo). O modelo melhora através da otimização matemática da estrutura dos dados.
-O algoritmo busca o equilíbrio entre dois conceitos:
-- Coesão (Inércia): Garante que os pontos dentro de um mesmo grupo estejam o mais próximos possível entre si.
-- Separação: Garante que os diferentes grupos (clusters) estejam o mais distantes possível uns dos outros.
-Como não sabemos quantos grupos existem nos dados, é utilizado uma técnica para encontrar o "número ideal":
-- Método do Cotovelo (Elbow Method): Identifica o ponto onde adicionar mais grupos para de trazer ganhos significativos de precisão.
-- Silhouette Score: Uma nota de -1 a 1 que mede o quão bem cada ponto se encaixa no seu grupo atual em relação aos vizinhos.
+5. **Interpretação e tomada de decisão:**
+    * Como os resultados podem ser interpretados e colocados em prática.
 
-<h2>BANCO DE DADOS</h2>
+---
 
-O banco de dados no Machine Learning são organizados em duas dimensões:
+## 🤖 Modelos Supervisionados
 
-1: Observações:
-- Unidade de análise que você trás os dados com as características e atributos medidos.
+O modelo é treinado usando um conjunto de dados que já contém a **resposta correta** (pares de Entrada/Features e Saída/Target).
 
-2: Variáveis:
-- Características/atributos observados, medidos e organizados.
+* **Features (Entrada):** Características ou atributos do que você está analisando.
+* **Target (Saída/Rótulo):** Valor final que o modelo deve aprender a prever.
 
-A inserção do banco de dados no Python segue uma estrutura tabular, como em uma planilha de excel, arquivo CSV, etc.
 
-<h2>TIPOS DE VARIÁVEIS</h2>
 
- <h4>1. Métricas: Quantitativas</h4>
- 
- - Apresentam características que podem ser mensuradas ou contadas.
+[Image of Supervised vs Unsupervised Learning]
 
-Principais características:
 
- - Podem ser representadas por diversas ferramentas descritivas, como medidas de posição, dispersão, e gráficos gerados a partir delas.
- Recorrentemente utilizam variáveis métricas:
- - Medidas de posição: Média, mediana e quartis e Medidas de dispersão: Variância e desvio padrão.
+### **Fases do Modelo Supervisionado**
+1. **Fase de Treinamento:** O modelo estuda com o "gabarito" (Entrada + Saída) para ajustar seus parâmetros.
+2. **Fase de Predição / Teste:** O modelo não tem acesso à saída. Ele gera uma resposta com base no que aprendeu e é avaliado em dados novos.
 
- <h4>2. Não métricas: Qualitativas ou categóricas</h4>
- 
-Indicam as características que não podem ser medidas.
+> **Atenção (Overfitting):** Se o modelo ajustar demais para corrigir detalhes mínimos, ele decora os dados de treino e falha ao receber dados novos.
 
-Principais características:
 
-- Tem sua representação feita por tabelas de frequência (observa as contagens em cada categoria) ou gráficos formados a partir delas.
-Tipos de Frequência:
- - Frequência Absoluta: Contagem de ocorrência em cada categoria.
- - Frequência Relativa: Porcentual de cada categoria em relação ao total de observações (100%).
- 
- Não é possível obter medidas descritivas como média ou desvio padrão. Exemplo: Não é possível ter uma média de nacionalidade, região, estado civil, etc.
+[Image of Overfitting vs Underfitting]
 
-<h4>3. Variáveis Dummy</h4>
 
-São essenciais para transformar dados que não são números (categorias, nomes ou estados) em um formato numérico que os algoritmos de Machine Learning consigam processar.
+---
 
-- São colunas binárias (0 ou 1) criadas para representar dados categóricos. Elas permitem que modelos matemáticos processem informações qualitativas sem criar uma hierarquia falsa entre as categorias.
+## 🔍 Modelos Não Supervisionados
 
-Características:
+O algoritmo recebe dados **sem rótulos** e sem respostas pré-definidas. O objetivo é encontrar uma estrutura interna ou padrões ocultos por conta própria.
 
-- Elimina a Hierarquia Falsa: Este é o motivo mais importante. Se você usar números simples (1, 2, 3) para representar categorias como "C#", "Java" e "Python", o modelo matemático vai assumir que: Python(3) > C#(1). O modelo pode achar que Python tem "mais valor" que C#, o que estragaria a lógica.
-- Compatibilidade Matemática: Algoritmos como Regressão Linear, Redes Neurais e SVM baseiam-se em cálculos de distância e multiplicações de matrizes. Ao transformar o texto "São Paulo" em 0 em 1 o processador passa a entender corretamente.
-- Interpretabilidade dos Pesos: Ao usar variáveis dummy, o modelo atribui um coeficiente (peso) para cada categoria, permitindo auditar a decisão. Fórmula de Exemplo (Score de 0 a 100): Score = 40 + (0,005 x Renda) + (25 x Moradia_Propria) - (10 x Moradia_Alugada)
+### **Fases do Modelo Não Supervisionado**
+1. **Fase de Treinamento (Descoberta):** Analisa semelhanças matemáticas para criar grupos (clusters) ou regras.
+2. **Fase de Predição / Aplicação:** O modelo decide em qual grupo um dado novo se encaixa com base na estrutura descoberta.
 
-É fundamental a identificação do tipo da variável para a escolha da técnica que será utilizada na análise dos dados, principalmente as variáveis ambíguas (que podem possuir duas ou mais interpretações).
-Motivo: As melhores técnicas estatísticas e os modelos de machine learning são escolhidos em função do tipo de variável.
+### **Métricas de Otimização**
+* **Coesão (Inércia):** Garante que os pontos dentro de um mesmo grupo estejam próximos.
+* **Separação:** Garante que os diferentes grupos estejam o mais distantes possível.
+* **Método do Cotovelo (Elbow Method):** Identifica o número ideal de grupos onde o ganho de precisão estabiliza.
+* **Silhouette Score:** Nota de -1 a 1 que mede o encaixe de cada ponto no seu grupo.
 
+
+
+---
+
+## 📊 Estrutura e Tipos de Variáveis
+
+O banco de dados segue uma estrutura tabular (Excel, CSV) organizada em:
+1. **Observações:** Unidade de análise (linhas).
+2. **Variáveis:** Características e atributos medidos (colunas).
+
+### **Classificação das Variáveis**
+
+| Tipo | Nome | Características | Exemplos |
+| :--- | :--- | :--- | :--- |
+| **Quantitativas** | Métricas | Mensuráveis ou contáveis. Usam Média, Mediana, Variância. | Idade, Renda, Peso. |
+| **Qualitativas** | Não Métricas | Categóricas. Representadas por tabelas de frequência (Absoluta/Relativa). | Nacionalidade, Estado Civil. |
+
+### **Variáveis Dummy**
+Essenciais para transformar categorias (texto) em números (0 ou 1) para que o processador entenda sem criar uma **Hierarquia Falsa**.
+
+* **Exemplo:** Se usar C#=1, Java=2 e Python=3, o modelo pode achar que Python vale mais que C#. Com Dummy, cada linguagem vira uma coluna de sim (1) ou não (0).
+* **Vantagens:** Compatibilidade matemática e interpretabilidade dos pesos (coeficientes).
 # 🤖 Azure AI Foundry & Machine Learning (AI-102)
 
 O Azure AI Foundry é o portal unificado da Microsoft onde você cria projetos de IA, implanta modelos, testa no playground e conecta serviços.
@@ -205,6 +189,36 @@ Pode ser vantajoso as vezes, porém o TPM será maior, e se a resposta for muito
 
 **Se precisar passar todo um contexto em um único prompt:**
 Deverá estar de forma explícita no prompt que deve ser feita apenas uma análise completa e pedir para não gerar novas funcionalidades/mudanças. Caso for alteração/criação em múltiplos arquivos, solicitar ao modelo uma saída apenas uma de cada vez é uma boa prática.
+
+---
+
+## 🚀 Tipos de Implantação (Deployment)
+
+### **Modelos de Capacidade e Roteamento**
+
+| Tipo | Infraestrutura | Modelo de Custo | Recomendação de Uso |
+| :--- | :--- | :--- | :--- |
+| **Standard** | Compartilhada com outros clientes Azure. | Pague por token consumido (Pay-as-you-go). | Desenvolvimento, testes e projetos de pequeno porte. |
+| **Global Standard** | Roteamento automático para o datacenter mais próximo/disponível. | Baseado em consumo, com foco em baixa latência global. | Apps em produção com usuários espalhados geograficamente. |
+| **Provisioned (PTU)** | Capacidade dedicada e exclusiva (como um servidor alugado). | Pagamento por capacidade reservada (independente do uso). | Apps críticos, volume alto e previsível (Bancos, Hospitais). |
+
+
+
+* **Observação sobre Standard:** Por ser capacidade compartilhada, se o servidor estiver lotado, pode haver fila no processamento.
+
+* **Observação sobre Provisioned (PTU):** Garante desempenho constante e sem filas, pois a capacidade é reservada exclusivamente para o seu projeto.
+
+---
+
+### **Serverless - Models as a Service (MaaS)**
+
+Modelo hospedado pelo provedor onde você não gerencia nenhuma infraestrutura.
+
+* **Funcionamento:** Você não implanta nada, acessa o modelo diretamente via API, como um serviço externo. 
+
+* **Modelos de Terceiros:** Muito comum para modelos que estão no catálogo mas não são nativos da Microsoft/OpenAI, como **Llama (Meta)** ou **Mistral**.
+
+* **Melhor para:** Experimentar modelos open-source rapidamente sem precisar configurar nada ou gerenciar recursos de computação.
 
 ---
 
