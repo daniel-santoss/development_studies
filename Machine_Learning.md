@@ -134,4 +134,80 @@ Características:
 É fundamental a identificação do tipo da variável para a escolha da técnica que será utilizada na análise dos dados, principalmente as variáveis ambíguas (que podem possuir duas ou mais interpretações).
 Motivo: As melhores técnicas estatísticas e os modelos de machine learning são escolhidos em função do tipo de variável.
 
+# 🤖 Azure AI Foundry & Machine Learning (AI-102)
 
+O Azure AI Foundry é o portal unificado da Microsoft onde você cria projetos de IA, implanta modelos, testa no playground e conecta serviços.
+
+---
+
+## 🏗️ Organização do Ambiente
+
+| Recurso | Nível | Função |
+| :--- | :--- | :--- |
+| **Hub** | Organizacional | Agrupa projetos e recursos compartilhados. |
+| **Project** | Trabalho | Ambiente específico para o desenvolvimento de uma solução. |
+| **Deployment** | Entrega | Modelo implantado e pronto para receber chamadas de API. |
+
+---
+
+## 📚 Model Catalog
+
+Biblioteca de modelos disponíveis no Foundry. Inclui modelos da OpenAI (GPT-4o, GPT-4), da Microsoft (Phi-4), da Meta (Llama) e outros. Você filtra por tarefa, custo e capacidade antes de implantar.
+
+### **Modelos comparados no Lab**
+
+| Atributo | Phi-4 (Microsoft) | GPT-4o (OpenAI) |
+| :--- | :--- | :--- |
+| **Tipo** | Modelo pequeno (SLM) | Modelo grande (LLM) |
+| **Tamanho** | ~14B parâmetros | ~200B+ parâmetros |
+| **Custo** | ● Baixo | ● Alto |
+| **Velocidade** | ● Rápida | ● Moderada |
+| **Raciocínio** | ● Bom | ● Excelente |
+| **Melhor para** | Edge, apps leves | Lógica complexa, multimodal |
+
+---
+
+## 🧠 SLM x LLM
+
+* **SLM (Small Language Model):** Econômica, ágil, boa com tarefas simples do dia a dia.
+    * **Usa-se quando:**
+    * App precisa rodar barato em escala;
+    * Tarefa é simples: resumo, classificação, FAQ;
+    * Precisa de resposta rápida (ex: chatbot de atendimento);
+    * Rodar em dispositivo local / edge.
+
+* **LLM (Large Language Model):** Resolve problemas complexos, possui mais contexto, porém tem mais custos (tokens/dinheiro) e demora um pouco mais para gerar uma saída.
+
+> **Nota:** Uma SLM pode superar um LLM em tarefas específicas quando é bem treinada com dados relevantes e ajustada para aquele contexto, especialmente em problemas simples ou bem definidos.
+
+---
+
+## 📊 Métricas e Conceitos Técnicos
+
+* **Parâmetros:** É basicamente um número interno que o modelo ajusta durante o treinamento para aprender a relacionar conceitos e prever textos. Quanto mais parâmetros, mais o modelo consegue guardar relações complexas entre ideias. Um modelo com 14 bilhões de parâmetros tem 14 bilhões desses números armazenados. É um tamanho, uma característica mensurável e concreta.
+
+* **Capacidade:** Quantidade de conhecimento absorvido durante o treinamento como entender linguagem, raciocinar, generalizar (resolver problemas novos que ele nunca viu antes, usando o que aprendeu), memorizar padrões, manter contexto (lembrar de conversas).
+
+* **TPM (Tokens Per Minute):** Quantos tokens o modelo processa por minuto. Se o limite for 1000 TPM, não é possível mandar um prompt com 2000 tokens, pois causará um erro. É possível ajustar a quota.
+    * **Cálculo:** `Total de tokens = prompt(entrada) + Completion(Saída - Resposta da IA)`
+
+* **RPM (Requests Per Minute):** Quantas chamadas ele suporta simultaneamente.
+
+---
+
+## ⚡ Boas Práticas de Prompt
+
+**Por que não enviar tudo em um único prompt para economizar RPM?**
+Pode ser vantajoso as vezes, porém o TPM será maior, e se a resposta for muito grande o modelo pode:
+* Cortar a resposta se o limite de tokens forem atingidos;
+* Perder precisão e se esquecer de responder certas perguntas;
+* Maior tempo de resposta.
+
+**Se precisar passar todo um contexto em um único prompt:**
+Deverá estar de forma explícita no prompt que deve ser feita apenas uma análise completa e pedir para não gerar novas funcionalidades/mudanças. Caso for alteração/criação em múltiplos arquivos, solicitar ao modelo uma saída apenas uma de cada vez é uma boa prática.
+
+---
+
+## 🎓 Foco na Certificação
+
+> **Por que esse comparativo cai na prova:** o exame cobra muito cenários do tipo "qual modelo usar para X situação". Entender o trade-off custo vs. capacidade entre SLMs e LLMs é fundamental.
